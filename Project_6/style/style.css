@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,900&display=swap");
+:root {
+  --tree: #5e301aaa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url("img/log_reg_bcg.jpg");
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.container .box {
+  background: var(--tree);
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px 0 rgba(255, 255, 255, 0.1), 0 32px 64px -48px rgba(255, 255, 255, 0.5);
+}
+.container .form-box {
+  width: 450px;
+  margin: 0px 10px;
+}
+.container .form-box header {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8d8d8d;
+  margin-bottom: 10px;
+}
+.container .form-box form .field {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.container .form-box form .field .submit {
+  width: 100%;
+}
+.container .form-box form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0px 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+.container .form-box form .links {
+  font-size: 13px;
+  display: flex;
+  justify-content: right;
+  margin: 10px 0;
+}
+.container .form-box form .links .link {
+  margin-left: 5px;
+  color: #fff;
+  transition: all 0.1s;
+}
+.container .form-box form .links .link:hover {
+  color: #3267e3;
+}
+
+.btn {
+  height: 35px;
+  background: #64290d;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn:hover {
+  opacity: 0.82;
+  height: 45px;
+}
+
+.nav {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 60px;
+  z-index: 100;
+}
+.nav .logo {
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+}
+.nav .logo a {
+  text-decoration: none;
+  color: #000;
+}
+.nav .right-links a {
+  padding: 0px 15px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+main .main-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+main .main-box .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .main-box .bottom {
+  width: 100%;
+  margin-top: 20px;
+}
+main .main-box .box {
+  background: var(--tree);
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px 0 rgba(255, 255, 255, 0.1), 0 32px 64px -48px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 840px) {
+  main .main-box .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .main-box .bottom {
+    margin-top: 0;
+  }
+  main .main-box .box {
+    margin: 10px 10px;
+  }
+}
+.message {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background-color: rgba(255, 255, 255, 0.0980392157);
+  padding: 15px 0;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.ext {
+  display: flex;
+  justify-content: center;
+}
+
+.success {
+  border: 3px solid #3cb043;
+}
+
+.error {
+  border: 3px solid #de1a24;
+}
+
+.error-text {
+  color: #de1a24;
+  font-size: 9px;
+  height: 13px;
+}/*# sourceMappingURL=style.css.map */
